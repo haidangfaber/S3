@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/init_spring
+    username: root
+    password: 123456
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+      generate-ddl: true
+
+
+
+bezkoder:
+  app:
+    jwtExpirationMs: '86400000'
+    jwtSecret: bezKoderSecretKey
